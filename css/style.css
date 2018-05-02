@@ -1,3 +1,4 @@
+/* NAVBAR */
 .navbar {
     color: white;
     background-color: #6a447a;
@@ -18,10 +19,6 @@
     height: 60px;
 }
 
-.navbar ul {
-    
-}
-
 .navbar li {
     height: 85px;
     display: flex;
@@ -32,6 +29,10 @@
     color: skyblue;
 }
 
+.collasped-style {
+    color: red;
+}
+
 .unselectable {
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -39,5 +40,27 @@
     user-select: none; /* Standard */
 }
 
+.navbar-toggle {
+    margin-top: 20px;
+}
+
+.navbar-toggle span {
+    background-color: white;
+}
+
+/* GENERAL */
 body {
+    background-color: black;
+}
+
+/* SMALL SCREEN */
+@media only screen and (max-width: 768px) {
+    #collapsable {
+        position: absolute;
+        top: 83px;
+        right: 0px;
+        padding-left: 30px;
+        padding-right: 50px;
+        background-color: #6a447a
+    }
 }
