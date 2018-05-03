@@ -26,11 +26,6 @@ $(document).ready(function(){
         $("#page-body").load("views/videos.html");
     });
     
-    // Change to News & Events page
-    $("#news-nav").click(function(){
-        $("#page-body").load("views/news.html");
-    });
-    
     // Change to Shop page
     $("#shop-nav").click(function(){
         $("#page-body").load("views/shop.html");

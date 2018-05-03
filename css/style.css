@@ -1,12 +1,21 @@
+/* VARIABLES */
+:root {
+    --bg-color: #fff3ea;
+    --main-purple: #733d7c;
+    --light-purple: #ac79b5;
+    --main-blue: skyblue;
+    --main-font: "Montserrat";
+}
+
 /* NAVBAR */
 .navbar {
     color: white;
-    background-color: #6a447a;
+    background-color: var(--main-purple);
     
     border-radius: 0px;
     height: 85px;
     
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--main-font), sans-serif;
     font-size: 15px;
 }
 
@@ -26,7 +35,7 @@
 }
 
 .navbar li:hover {
-    color: skyblue;
+    color: var(--main-blue);
 }
 
 .collasped-style {
@@ -50,7 +59,32 @@
 
 /* GENERAL */
 body {
-    background-color: black;
+    background-color: var(--bg-color);
+}
+
+#page-body {
+    width: 90%;
+    margin: auto;
+    font-family: var(--main-font);
+}
+
+h1 {
+    color: var(--main-purple);
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--light-purple);
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* HOMEPAGE */
+.home-img {
+    width: 50%;
 }
 
 /* SMALL SCREEN */
@@ -61,6 +95,6 @@ body {
         right: 0px;
         padding-left: 30px;
         padding-right: 50px;
-        background-color: #6a447a
+        background-color: var(--main-purple)
     }
 }
