@@ -4,6 +4,7 @@
     --main-purple: #733d7c;
     --light-purple: #ac79b5;
     --main-blue: skyblue;
+    --light-blue: #eaf2ff;
     --dark-blue: #366da8;
     --main-font: "Montserrat";
 }
@@ -11,7 +12,7 @@
 /* GENERAL */
 body {
     background-color: var(--bg-color);
-    font-size: 20px;
+    font-size: 18px;    /* 20 for brackets preview */
 }
 
 #page-body {
@@ -40,7 +41,7 @@ h2 {
     color: var(--light-purple);
     font-size: 22px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: -30px;
 }
 
 p {
@@ -143,14 +144,9 @@ address {
 }
 
 /* HOMEPAGE */
-#home-page h1 {
-    margin-bottom: 10px;
-}
-
 #home-banner {
     margin-top: 10px;
-    margin-left: -60px;
-    margin-right: -60px;
+    margin-left: -40px;
     display: flex;
 }
 
@@ -159,7 +155,7 @@ address {
 }
 
 .home-col-landscape {
-    flex: 80%
+    flex: 90%
 }
 
 .home-img {
@@ -296,8 +292,118 @@ address {
     margin-bottom: 30px;
 }
 
+/* CONTACT PAGE */
+#contact-input {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--light-blue);
+    border: 2px solid var(--light-purple);
+    border-radius: 2px;
+}
+
+#contact-input h3 {
+    margin: 0px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#contact-input .row {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#contact-input .col-md-2,
+#contact-input .col-md-4,
+#contact-input .col-md-6,
+#contact-input .col-md-8,
+#contact-input .col-md-12 {
+    margin: 0px;
+    display: flex;
+    align-content: center;
+}
+
+#contact-input label {
+    font-size: 16px;
+    font-weight: normal;
+    padding-right: 10px;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+
+#contact-input label {
+    flex: 10%;
+}
+
+#contact-input .col-md-4 .input-group {
+    flex: 60%;
+}
+
+#contact-input .col-md-6 .input-group {
+    flex: 35%;
+}
+
+#contact-input .col-md-8 .input-group {
+    flex: 80%;
+}
+
+#contact-input .col-md-12 .input-group {
+    flex: 60%;
+}
+
+#city-col, #phone-col {
+    width: 41%;
+}
+
+#state-col {
+    width: 25%;
+}
+
+#email-col {
+    width: 59%;
+}
+
+#msg-label {
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+#msg-box {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    resize: vertical;
+}
+
 /*-------------------------------------------------------*/
 
+/* MEDIUM SCREEN */
+@media only screen and (max-width: 1000px) {
+    #city-col {
+        width: 100%;
+    }
+
+    #state-col {
+        width: 100%;
+    }
+    
+    #zip-col {
+        width: 100%;
+    }
+    
+    #phone-col {
+        width: 100%;
+    }
+    
+    #email-col {
+        width: 100%;
+    }
+}
+    
 /* SMALL SCREEN */
 @media only screen and (max-width: 768px) {
     #collapsable {
@@ -327,6 +433,10 @@ address {
     #heavy-anchor-pic {
         padding-left: 0;
     }
+    
+    #contact-input {
+        width: 100%;
+    }
 }
 
 /* SMALLEST SCREEN */
@@ -341,6 +451,6 @@ address {
     }
     
     #music-page li {
-    margin-bottom: 20px;
-}
+        margin-bottom: 20px;
+    }
 }

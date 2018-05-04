@@ -25,7 +25,8 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
         <!-- Scripts -->
-        <script src="js/script.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/contact.js"></script>
     </head>
 
     <body>
@@ -58,7 +59,98 @@
            
         <!-- Page Body -->
         <div id="page-body">
-            <h1>Contact Us</h1>
+            <div class="container-fluid" id="contact-page">
+                <div class="row">
+                    <h1>Contact Us</h1>
+                    <h2>prune_beat@yahoo.com</h2>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="container" id="contact-input" method="post" name="contact-form">
+                            <div class="row">
+                                <h3>Enter your information:</h3>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="first-name">First Name</label>
+                                    <div class="input-group">
+                                        <input name="first-name" type="text" class="form-control" id="first-name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="last-name">Last Name</label>
+                                     <div class="input-group">
+                                        <input name="last-name" type="text" class="form-control" id="last-name">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="address-1">Address Line 1</label>
+                                     <div class="input-group">
+                                        <input name="address-1" type="text" class="form-control" id="address-1">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="address-2">Address Line 2</label>
+                                     <div class="input-group">
+                                        <input name="address-2" type="text" class="form-control" id="address-2">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4" id="city-col">
+                                    <label for="city">City</label>
+                                     <div class="input-group">
+                                        <input name="city" type="text" class="form-control" id="city">
+                                    </div>
+                                </div>
+                                <div class="col-md-4" id="state-col">
+                                    <label for="state">State</label>
+                                    <div class="input-group">
+                                        <select name="state" class="form-control" id="state">
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="zip">Zip</label>
+                                     <div class="input-group">
+                                        <input name="zip" type="text" class="form-control" id="zip">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4" id="phone-col">
+                                    <label for="phone">Phone</label>
+                                     <div class="input-group">
+                                        <input name="phone" type="text" class="form-control" id="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-8" id="email-col">
+                                    <label for="email">Email</label>
+                                     <div class="input-group">
+                                        <input name="email" type="text" class="form-control" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <label for="msg-box" id="msg-label">Type Your Message:</label>
+                                <textarea rows="10" id="msg-box"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
              
         <!-- Footer -->
