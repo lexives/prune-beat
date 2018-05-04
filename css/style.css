@@ -7,6 +7,64 @@
     --main-font: "Montserrat";
 }
 
+/* GENERAL */
+body {
+    background-color: var(--bg-color);
+    font-size: 20px;
+}
+
+#page-body {
+    width: 85%;
+    margin: auto;
+    font-family: var(--main-font);
+}
+
+.left {
+    padding-right: 20px;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+h1 {
+    color: var(--main-purple);
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--light-purple);
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+address {
+    font-family: var(--main-font), 'Verdana', sans-serif;
+    font-size: 12px;
+    color: var(--main-purple);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /* NAVBAR */
 .navbar {
     color: white;
@@ -14,7 +72,7 @@
     border-radius: 0px;
     height: 85px;
     font-family: var(--main-font), Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .navbar-brand {
@@ -27,8 +85,10 @@
 
 #collapsable {
     margin-right: 160px;
-    -webkit-transform: scaleY(1.1);
-    transform: scaleY(1.1);
+}
+
+#collapsable p {
+    padding: 0px;
 }
 
 .navbar li {
@@ -63,52 +123,20 @@
     top: 0px;
     height: 45px;
     margin-top: 17.5px;
+    font-size: 15px;
     font-weight: bold;
     color: var(--main-purple);
 }
 
-/* GENERAL */
-body {
-    background-color: var(--bg-color);
-}
-
-#page-body {
-    width: 90%;
-    margin: auto;
-    font-family: var(--main-font);
-}
-
-h1 {
+.navbar-btn:hover {
     color: var(--main-purple);
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-}
-
-h2 {
-    color: var(--light-purple);
-    font-size: 22px;
-    text-align: center;
-    margin-top: 0px;
-}
-
-footer {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-}
-
-address {
-    font-family: var(--main-font), 'Verdana', sans-serif;
-    font-size: 12px;
-    color: var(--main-purple);
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 /* HOMEPAGE */
 #home-banner {
+    margin-top: -30px;
+    margin-left: -60px;
+    margin-right: -60px;
     display: flex;
 }
 
@@ -126,6 +154,65 @@ address {
     height: 100%;
 }
 
+/* ABOUT PAGE */
+#about-page h3 {
+    text-align: center;
+    color: var(--main-purple);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#old-band-pic {
+    width: 100%;
+    float: right;
+}
+
+#band-members {
+    margin-top: 10px;
+}
+
+#band-members ul {
+    list-style: none;
+    padding-left: 20%;
+}
+
+#band-members span {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#band-photo {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#studio-pic {
+    width: 110%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
+#lexi-pic {
+    width: 40%;
+    display: inline-block;
+    margin-left: 8%;
+    padding-right: 5px;
+    padding-top: 20px;
+}
+
+#selfie {
+    width: 43%;
+    display: inline-block;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+/*-------------------------------------------------------*/
+
 /* SMALL SCREEN */
 @media only screen and (max-width: 768px) {
     #collapsable {
@@ -134,14 +221,19 @@ address {
         left:10px;
         padding-left: 30px;
         padding-right: 50px;
-        background-color: var(--main-purple)
+        background-color: var(--main-purple);
+        z-index: 999;
     }
     
     .navbar-brand {
         padding: 0px;
-        margin-left: 35%;
+        margin-left: 33%;
         margin-top: 10px;
         height: 60px;
+    }
+    
+    #studio-pic {
+        padding-left: 0;
     }
 }
 
