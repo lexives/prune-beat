@@ -86,21 +86,28 @@ address {
 }
 
 #collapsable {
-    margin-right: 160px;
+    margin-right: 140px;
+    padding: 0px;
+    background-color: var(--main-purple);
 }
 
-#collapsable p {
-    padding: 0px;
+#collapsable a {
+    margin-left: 0px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#collapsable a:hover {
+    color: var(--main-blue);
+    background-color: var(--main-purple);
 }
 
 .navbar li {
-    height: 85px;
+    height: 80px;
     display: flex;
     align-items: center;
-}
-
-.navbar li:hover {
-    color: var(--main-blue);
 }
 
 .unselectable {
@@ -123,9 +130,10 @@ address {
     position: absolute;
     right: 10px;
     top: 0px;
-    height: 45px;
+    height: 40px;
+    width: 150px;
     margin-top: 17.5px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--main-purple);
 }
@@ -260,20 +268,17 @@ address {
     width: 100%;
 }
 
-.con
-
 /*-------------------------------------------------------*/
 
 /* SMALL SCREEN */
 @media only screen and (max-width: 768px) {
     #collapsable {
         position: absolute;
+        width: 170px;
         top: 83px;
         left:10px;
-        padding-left: 30px;
-        padding-right: 50px;
-        background-color: var(--main-purple);
         z-index: 999;
+        padding-left: 25px;
     }
     
     .navbar-brand {
