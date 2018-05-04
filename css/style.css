@@ -267,7 +267,7 @@ address {
 
 .audio-list {
     width: 100%;
-    padding-left: 0px;
+    padding-left: 5px;
 }
 
 #music-page li {
@@ -275,7 +275,7 @@ address {
 }
 
 #music-page ul p {
-    font-size: 14px;
+    font-size: 15px;
     text-align: left;
     align-items: center;
     height: 40px;
