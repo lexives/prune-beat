@@ -4,6 +4,7 @@
     --main-purple: #733d7c;
     --light-purple: #ac79b5;
     --main-blue: skyblue;
+    --dark-blue: #366da8;
     --main-font: "Montserrat";
 }
 
@@ -32,6 +33,7 @@ h1 {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -46,8 +48,8 @@ p {
     padding-bottom: 10px;
 }
 
-.header {
-    margin-bottom: 40px;
+ul {
+    list-style: none;
 }
 
 footer {
@@ -133,8 +135,12 @@ address {
 }
 
 /* HOMEPAGE */
+#home-page h1 {
+    margin-bottom: 10px;
+}
+
 #home-banner {
-    margin-top: -30px;
+    margin-top: 10px;
     margin-left: -60px;
     margin-right: -60px;
     display: flex;
@@ -173,7 +179,6 @@ address {
 }
 
 #band-members ul {
-    list-style: none;
     padding-left: 20%;
 }
 
@@ -197,19 +202,65 @@ address {
 }
 
 #lexi-pic {
-    width: 40%;
+    width: 44%;
     display: inline-block;
-    margin-left: 8%;
-    padding-right: 5px;
+    padding-left: 10px;
     padding-top: 30px;
 }
 
-#selfie {
-    width: 42%;
+#twins {
+    width: 50%;
     display: inline-block;
-    padding-left: 5px;
+    margin-left: 3%;
+    padding-right: 10px;
     padding-top: 30px;
 }
+
+/* MUSIC PAGE */
+#music-page img {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#music-page h3 {
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#music-page span {
+    font-style: italic;
+}
+
+.song-preview {
+    display: flex;
+    padding: 10px;
+}
+
+.song-list{
+    padding-left: 0;
+    width: 35%;
+}
+
+.audio-list {
+    padding-left: 10px;
+    width: 65%;
+}
+
+#music-page ul p {
+    font-size: 14px;
+    text-align: left;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#music-page audio {
+    width: 100%;
+}
+
+.con
 
 /*-------------------------------------------------------*/
 
