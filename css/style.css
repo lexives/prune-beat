@@ -184,6 +184,7 @@ address {
 
 #band-members {
     margin-top: -50px;
+    line-height: 32px;
 }
 
 #band-members ul {
@@ -209,11 +210,18 @@ address {
     padding-top: 20px;
 }
 
+#heavy-anchor-pic {
+    width: 110%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
 #lexi-pic {
     width: 44%;
     display: inline-block;
     padding-left: 10px;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 #twins {
@@ -221,7 +229,7 @@ address {
     display: inline-block;
     margin-left: 3%;
     padding-right: 10px;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 /* MUSIC PAGE */
@@ -238,6 +246,11 @@ address {
     padding-top: 5px;
 }
 
+#music-page p {
+    width: 75%;
+    margin: auto;
+}
+
 #music-page span {
     font-style: italic;
 }
@@ -249,19 +262,25 @@ address {
 
 .song-list{
     padding-left: 0;
-    width: 35%;
+    width: 65%;
 }
 
 .audio-list {
-    padding-left: 10px;
-    width: 65%;
+    width: 100%;
+    padding-left: 0px;
+}
+
+#music-page li {
+    margin-bottom: 10px;
 }
 
 #music-page ul p {
     font-size: 14px;
     text-align: left;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    align-items: center;
+    height: 40px;
+    margin: 0px;
+    width: auto;
 }
 
 #music-page audio {
@@ -281,6 +300,10 @@ address {
         padding-left: 25px;
     }
     
+    #collapsable ul{
+        margin-right: 0px;
+    }
+    
     .navbar-brand {
         padding: 0px;
         margin-left: 33%;
@@ -289,6 +312,10 @@ address {
     }
     
     #studio-pic {
+        padding-left: 0;
+    }
+    
+    #heavy-anchor-pic {
         padding-left: 0;
     }
 }
