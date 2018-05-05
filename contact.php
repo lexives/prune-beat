@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!-- Title -->
         <title>Prune Beat</title>
@@ -157,7 +157,7 @@
                             </div>
                             
                             <div class="row">
-                                <h4>&#8432; required field</h4>
+                                <h4> &#8432; required field</h4>
                                 <input type="submit" name="submit" value="Send" class="btn btn-default">
                             </div>
                         </form>
