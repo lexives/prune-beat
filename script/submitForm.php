@@ -14,7 +14,7 @@
             $firstName = test_input($_POST["first-name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z ]*$/", $firstName)) {
-              $errMsg .= $errMsg + "Only letters and white space allowed in First Name field. "; 
+              $errMsg .= "Only letters and white space allowed in First Name field. "; 
             }
         }
         
@@ -91,12 +91,34 @@
         
         // If all is good...
         if(empty($errMsg)) {
-            $errMsg = "Thank You! Your message has been sent.";
-        
-            // Compile data into an email {
-                
+            
+            // Compile data into an email 
+            $to = "aei53f@mst.edu";  // change to prune_beat@yahoo.com when in production
+            
+            $subject = "Message from prune-beat.com\r\m";
+            
+            $headers = "From: $firstName";
+            if(!empty($lastName)) {
+                $headers .= $lastName;
             }
-        }
+            $headers .= "\r\nReply To: $email\r\n";
+            
+            $body = $msg."\r\n";
+            if(!empty($addr1)) $body .= $addr1."\r\n";
+            if(!empty($addr2)) $body .= $addr2."\r\n";
+            if(!empty($city)) $body .= $city.", ";
+            if(!empty($state)) $body .= $state."\t";
+            if(!empty($zip)) $body .= $zip."\r\n";
+            if(!empty($phone)) $body .= $phone."\r\n";
+            
+            // Send email
+            if(mail($to, $subject, $body, $headers)) {
+                $errMsg = "Thank You! Your message has been sent.";
+            }
+            else {
+                $errMsg = "Error sending email.";
+            }
+        } 
     }
 
 
@@ -107,5 +129,4 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-
 ?>
